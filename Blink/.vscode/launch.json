@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable":"C:/Users/serha/OneDrive/Masaüstü/Gomulu_Sistem_Proje/Blink/build/Blink.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f1x.cfg"
+            ],
+            "openOCDPath": "C:/msys64/ucrt64/bin/openocd.exe",    // <- MSYS2 OpenOCD yolu
+            "armToolchainPath": "C:/Program Files (x86)/Arm/GNU Toolchain mingw-w64-i686-arm-none-eabi/bin",
+            "device": "STM32F103C8"
+        }
+    ]
+}
